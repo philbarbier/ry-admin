@@ -4,6 +4,7 @@ class Submission extends CI_Model
 {
     var $firstname = '';
     var $lastname = '';
+    var $title = '';
     var $school = '';
     var $biotext = '';
     var $email = '';
@@ -14,11 +15,12 @@ class Submission extends CI_Model
     }
 
     public function add_submission($data = []) {
-        $this->firstname = $data['firstname'];
-        $this->lastname = $data['lastname'];
-        $this->school = $data['school'];
-        $this->biotext = $data['biotext'];
-        $this->email = $data['email'];
+        $this->firstname    = $data['firstname'];
+        $this->lastname     = $data['lastname'];
+        $this->title        = $data['title'];
+        $this->school       = $data['school'];
+        $this->biotext      = $data['biotext'];
+        $this->email        = $data['email'];
 
         $res = $this->db->insert('submissions', $this);
         if (!$res) {

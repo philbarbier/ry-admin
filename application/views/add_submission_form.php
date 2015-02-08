@@ -8,6 +8,8 @@
         <br />
         <input type="text" name="school" placeholder="School" />
         <br />
+        <input type="text" name="title" placeholder="Design Title" />
+        <br />
         <input type="file" name="uploadfile" />
         <br />
         <textarea name="biotext" placeholder="Artist biography"></textarea>
